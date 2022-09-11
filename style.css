@@ -10,7 +10,7 @@ main{
     background-color: #111111;
 }
 .container{
-    width: 70%;
+    width: 75%;
     margin: 0 auto;
     /* min-height: 100vh; */
 }
@@ -114,12 +114,14 @@ nav{
 }
 .ref p img{
     margin-right: 10px;
+    width: 18px;
+    height: 18px;
 }
 .section2{
     background-color: black;
 }
 .section2-div{
-    width: 70%;
+    width: 75%;
     margin: 0 auto;
     padding: 70px 0px;
 }
@@ -181,14 +183,15 @@ nav{
     margin-left: 100px;
 }
 .empty{
-    width: 70%;
+    width: 75%;
     margin: 0 auto;
     padding: 30px 0px;
     border-top: 0.6px solid  #C6C6C6;
 }
 .section3{
-    width: 70%;
+    width: 75%;
     margin: 0 auto;
+    padding-bottom: 70px;
 }
 .inner-section3 h3{
     color: white;
@@ -200,15 +203,17 @@ nav{
 .featured{
     display: grid;
     gap: 30px;
-    grid-template-columns: repeat(3, 3fr);
+    width: 100%;
+    grid-template-columns: repeat( 3, 33%);
+    align-content: center;
 }
 .live-projects{
-    width: 100%;
     padding-bottom: 30px;
+    width: 100%;
 }
 .project-img{
-    width: 315px;
-    height: 180px;
+    width: 19.7rem;
+    height: 11.25rem;
 }
 .project-img > img{
     border-radius: 4px;
@@ -268,4 +273,100 @@ nav{
 }
 .live p img{
     margin-right: 10px;
+}
+.education{
+    width: 75%;
+    margin: auto;
+}
+.education h3, .inner-education p {
+    color: white;
+    font-weight: 300;
+    font-family: 'Inter', sans-serif;
+}
+.education h3{
+    padding-bottom: 20px;
+    font-size: 18px;
+}
+.inner-education{
+    display: flex;
+    justify-content: space-between;
+}
+.school{
+    font-size: 16px;
+    padding-bottom: 10px;
+}
+.bachelor{
+    font-size: 12px;
+}
+@media screen and (max-width: 1200px) {
+    .container, .hero-text, .section2-div, .empty, .section3, .education{
+        width: 85%;
+    }
+    .hero-text{
+        width: 70%;
+    }
+    .hero-text h2{
+        font-size: 48px;
+    }
+    .hero-text p{
+        font-size: 14px;
+    }
+    .big-img {
+        width: 200px;
+        height: 250px;
+    }
+
+    .featured {
+        grid-template-columns: repeat(2, 2fr);
+    }
+}
+@media screen and (max-width: 768px) {
+    .inner-hero{
+        flex-direction: column;
+        width: 100%;
+    }
+    .hero-text{
+        width: 100%;
+        text-align: center;
+    }
+    .ref{
+        width: 30%;
+        margin-right: 20px;
+        align-items: center;
+    }
+    .company{
+        flex-direction: column;
+    }
+    .jobs{
+        width: 100%;
+        margin: 20px 0px;
+     display: flex;
+     justify-content: space-between;
+     /* align-items: center; */
+     border-left: none;
+     border-bottom: 1px solid white;
+    }
+    .jobs h4:hover{
+        border-left: none;
+        background-color: #1F1E1E;
+        margin-left: 0px;
+    }
+    .jobs h4{
+        margin-right: 0px;
+    }
+    .hero-links-tag{
+        width: 100%;
+    }
+    .arrow{
+        display: none;
+    }
+    /* .featured {
+        grid-template-columns: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: auto;
+        flex-wrap: wrap;
+    }
+     */
 }
