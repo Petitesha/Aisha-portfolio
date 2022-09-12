@@ -9,6 +9,9 @@
 main{
     background-color: #111111;
 }
+main.active{
+    background-color: white;
+}
 .container{
     width: 75%;
     margin: 0 auto;
@@ -43,17 +46,31 @@ nav{
     font-weight: 300px;
     font-family: 'Inter', sans-serif;
 }
+.links.active{
+ color: black;
+}
 .sidebar{
     display: none;
 }
 .hamburger{
     display: none;
 }
+.light-mode {
+    display: none;
+}
+
+/* .dark-mode.active {
+    display: none;
+} */
+.light-mode.active {
+    display: block;
+}
 .inner-hero{
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+
 .hero-text{
     width: 75%
 }
@@ -90,12 +107,9 @@ nav{
     justify-content: space-between;
     align-items: center;
     padding: 70px 0px;
-    /* margin: 30px 0px; */
 }
 .hero-links-tag{
     display: flex; 
-    /* flex-wrap: wrap;
-    align-items: center;  */
 }
 .ref{ 
     background-image: linear-gradient(89.81deg, #9845E8 -1.72%, #33D2FF 54.05%, #DD5789 99.78%);
@@ -335,7 +349,6 @@ nav{
         text-align: right;
     }
     .sidebar{
-        /* display: block; */
         width: 70%;
         position: absolute;
         top: 0;
