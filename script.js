@@ -12,6 +12,7 @@ lightmode.addEventListener('click', () => {
 
     lightmode.style.display = 'none';
     darkmode.style.display = 'block';
+    main.classList.toggle('active');
     for (let i = 0; i < links.length; i++) {
         links[i].classList.toggle('active');
       }
