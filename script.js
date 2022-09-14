@@ -3,36 +3,60 @@ const close = document.querySelector('.close');
 const sidebar = document.querySelector('.sidebar');
 const body = document.querySelector('body');
 const main = document.querySelector('main');
-const links = document.querySelectorAll('.links')
-const lightmode = document.querySelector('.light-mode');
-const darkmode = document.querySelector('.dark-mode img');
+const links = document.querySelectorAll('.links');
+const modeIcon = document.querySelector('.modeIcon');
+const bio = document.querySelector('.hero-text');
 
+let mode = 'dark';
 
-lightmode.addEventListener('click', () => {
-
-    lightmode.style.display = 'none';
-    darkmode.style.display = 'block';
-    main.classList.toggle('active');
-    for (let i = 0; i < links.length; i++) {
-        links[i].classList.toggle('active');
-      }
-})
-darkmode.addEventListener('click', () => {
-    darkmode.style.display = 'none';
-   lightmode.style.display = 'block';
-   for (let i = 0; i < links.length; i++) {
-    links[i].classList.toggle('active');
+const toggleMode = (evt) => {
+  if (mode === 'dark') {
+    evt.target.src = './images/light-mode.svg';
+    localStorage.setItem('state', 'light');
+    mode = 'light';
+  } else {
+    evt.target.src = './images/dark-mode.svg';
+    localStorage.setItem('state', 'dark');
+    mode = 'dark';
   }
-})
+  changeMode(mode);
+};
 
-hamburger.addEventListener('click', () => { 
-   hamburger.style.display = 'none';
-        close.style.display = 'block';
-      sidebar.style.display = 'block';
-    })
+const changeMode = (appearance) => {
+  // main.classList.toggle('active');
+  if (appearance === 'light') {
+    main.classList.add('active');
+    for (let i = 0; i < links.length; i++) {
+      links[i].classList.add('active');
+    }
+    bio.classList.add('active');
+    modeIcon.src = './images/light-mode.svg';
+  } else {
+    main.classList.remove('active');
+    for (let i = 0; i < links.length; i++) {
+      links[i].classList.remove('active');
+    }
+    bio.classList.remove('active');
+    modeIcon.src = './images/dark-mode.svg';
+  }
+};
 
-    close.addEventListener('click', () => { 
-        close.style.display = 'none';
-         hamburger.style.display = 'block';
-         sidebar.style.display = 'none';
- })
+const getModeFromLocalStorage = () => {
+  mode = localStorage.getItem('state');
+  console.log(mode);
+  changeMode(mode);
+};
+
+getModeFromLocalStorage();
+
+hamburger.addEventListener('click', () => {
+  hamburger.style.display = 'none';
+  close.style.display = 'block';
+  sidebar.style.display = 'block';
+});
+
+close.addEventListener('click', () => {
+  close.style.display = 'none';
+  hamburger.style.display = 'block';
+  sidebar.style.display = 'none';
+});
