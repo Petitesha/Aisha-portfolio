@@ -44,6 +44,7 @@ nav {
 }
 
 .ul {
+    text-decoration: none;
     display: flex;
     list-style: none;
 }
@@ -54,6 +55,8 @@ nav {
     font-size: 18px;
     font-weight: 300px;
     font-family: 'Inter', sans-serif;
+    cursor: pointer;
+   text-decoration: none;
 }
 
 .links.active {
@@ -144,6 +147,10 @@ nav {
     border-radius: 5px;
     margin-right: 30px;
 }
+/* .ref.active p{
+    background-color: white;
+
+} */
 
 .ref p {
     display: flex;
@@ -167,9 +174,23 @@ nav {
     width: 18px;
     height: 18px;
 }
-
+.hero-links-tag.active img{
+    filter: brightness(0.1);
+}
+.hero-links-tag.active p{
+    background-color: white;
+}
+.hero-links-tag.active span{
+    color: black;
+}
 .section2 {
     background-color: black;
+}
+.section2.active h3, .section2.active h4{
+    color: black;
+}
+.section2.active{
+    background-color: #f5f5f5;
 }
 
 .section2-div {
@@ -209,11 +230,15 @@ nav {
     font-weight: 300;
     font-family: 'Inter', sans-serif;
 }
+.jobs.active h4:hover{
+    border-left: none;
+   color: white;
+}
 
 .jobs h4:hover {
-    border-left: 4px solid white;
+    border-left: 2px solid white;
     background-color: #1F1E1E;
-    margin-left: -20px;
+    /* margin-left: -20px; */
 }
 
 .year {
@@ -243,6 +268,9 @@ nav {
     font-size: 14px;
     font-weight: 300;
     font-family: 'Inter', sans-serif;
+}
+.desc p.active{
+    color: #1F26B7;
 }
 
 .present {
@@ -295,7 +323,12 @@ nav {
     flex-direction: column;
     justify-content: space-between;
 }
-
+/* .project-details.active img{
+    filter: brightness(0.1);
+}
+.project-details.active span{
+    color: black;
+} */
 .project-details h3 {
     color: white;
     font-size: 24px;
@@ -310,9 +343,64 @@ nav {
     font-family: 'Inter', sans-serif;
     padding-bottom: 20px;
 }
-
+.bounce {
+	-moz-animation: bounce 3s infinite;
+	-webkit-animation: bounce 3s infinite;
+	animation: bounce 3s infinite;
+}
+@-moz-keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -moz-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -moz-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  60% {
+    -moz-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
+@-webkit-keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  60% {
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -moz-transform: translateY(-30px);
+    -ms-transform: translateY(-30px);
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  60% {
+    -moz-transform: translateY(-15px);
+    -ms-transform: translateY(-15px);
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
 .actions {
     color: white;
+}
+.actions.active{
+    color: black;
 }
 
 .framework {
@@ -322,7 +410,9 @@ nav {
     font-family: 'Inter', sans-serif;
     padding-bottom: 20px;
 }
-
+.framework.active{
+    color: #1F26B7;
+}
 .project-button {
     display: flex;
     align-items: center;
@@ -336,7 +426,18 @@ nav {
     margin-right: 20px;
     text-decoration: none;
 }
-
+.live.active p{
+    background-color: white;
+}
+.live.active img{
+    filter: brightness(0.1);
+}
+.live.active span{
+    color: black;
+}
+.github-button.active{
+    filter: brightness(0.1);
+}
 .live p {
     display: flex;
     align-items: center;
@@ -356,7 +457,9 @@ nav {
     width: 75%;
     margin: auto;
 }
-
+.education.active p{
+    color: black;
+}
 .education h3,
 .inner-education p {
     color: white;
@@ -448,6 +551,7 @@ nav {
         text-decoration: none;
         display: flex;
         flex-direction: column;
+        list-style: none;
         align-items: center;
     }
 
@@ -462,6 +566,8 @@ nav {
         font-size: 18px;
         text-decoration: none;
         font-family: 'Inter', sans-serif;
+        list-style: none;
+        cursor: pointer;
     }
 
     .inner-hero {
@@ -523,6 +629,9 @@ nav {
         margin-right: 0px;
         font-size: 16px;
     }
+    .dark-mode{
+        margin-bottom: 20px;
+    }
 
     .present {
         margin-left: 0px;
@@ -541,12 +650,14 @@ nav {
         font-size: 12px;
     }
 }
-
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 475px) {
     .featured {
         grid-template-columns: repeat(1, 1fr);
     }
+}
 
+@media screen and (max-width: 375px) {
+  
     .hero-links {
         padding: 20px 0px;
     }
