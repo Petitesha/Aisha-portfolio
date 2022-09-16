@@ -40,7 +40,9 @@
           <nav class="side-nav">
             <ul class="sidebar-ul">
               <li><a href="#projects" class="links-sidebar">Projects</a></li>
-              <li><a href="#experience" class="links-sidebar">Experience</a></li>
+              <li>
+                <a href="#experience" class="links-sidebar">Experience</a>
+              </li>
               <li><a href="#contact" class="links-sidebar">Contact</a></li>
               <li><a href="#education" class="links-sidebar">Education</a></li>
             </ul>
@@ -73,7 +75,7 @@
             </div>
           </div>
           <div class="hero-links" id="contact">
-            <div class="hero-links-tag" >
+            <div class="hero-links-tag">
               <a href="mailto:belloaishaaderonke@gmail.com" class="ref">
                 <p>
                   <img src="./images/email-icon.svg" />
@@ -105,21 +107,13 @@
         <h3 id="experience">EXPERIENCE</h3>
         <div class="company">
           <div class="jobs">
-            <h4>Shecode Africa</h4>
-            <h4>Easyrent Inc</h4>
-            <h4>Grazac Academy</h4>
+            <h4 onclick="changeExperience(event,1)" class="curr">
+              Shecode Africa
+            </h4>
+            <h4 onclick="changeExperience(event, 2)">Easyrent Inc</h4>
+            <h4 onclick="changeExperience(event, 3)">Grazac Academy</h4>
           </div>
-          <div class="desc">
-            <h3>Frontend Engineer</h3>
-            <div class="year">
-              <h4>learning and building projects</h4>
-              <h4 class="present">July 2021 - Present</h4>
-            </div>
-            <p>Abeokuta/Ogun State</p>
-            <h4>- implementing ui</h4>
-            <h4>- designing ui</h4>
-            <h4>- dynamically rendering components</h4>
-          </div>
+          <div class="desc"></div>
         </div>
       </div>
       <div class="empty"></div>
@@ -142,6 +136,7 @@
                 <a
                   href="https://easy-rent-product-frontend.vercel.app/"
                   class="live"
+                  target="_blank"
                 >
                   <p>
                     <img src="./images/link.svg" />
@@ -160,7 +155,7 @@
               <p class="actions">This helps users to build their website</p>
               <p class="framework">Javascript -Html -Css</p>
               <div class="project-button">
-                <a href="https://ecommerce-pi-gilt.vercel.app/" class="live">
+                <a href="https://ecommerce-pi-gilt.vercel.app/" class="live"  target="_blank">
                   <p>
                     <img src="./images/link.svg" />
                     <span>live demo</span>
@@ -169,6 +164,7 @@
                 <a
                   href="https://github.com/Petitesha/ecommerce"
                   class="github-button"
+                  target="_blank"
                 >
                   <img src="./images/github-fill.svg" alt="github-logo" />
                 </a>
@@ -187,7 +183,7 @@
               </p>
               <p class="framework">Javascript -Html -Css</p>
               <div class="project-button">
-                <a href="https://my-grazac-projects.vercel.app/" class="live">
+                <a href="https://my-grazac-projects.vercel.app/" class="live"  target="_blank">
                   <p>
                     <img src="./images/link.svg" />
                     <span>live demo</span>
@@ -195,7 +191,8 @@
                 </a>
                 <a
                   href="https://github.com/Petitesha/MyGrazacProjects"
-                  class="github-button"
+                  class="github-button" target="_blank"
+
                 >
                   <img src="./images/github-fill.svg" alt="github-logo" />
                 </a>
@@ -213,7 +210,7 @@
               </p>
               <p class="framework">React</p>
               <div class="project-button">
-                <a href="https://jaysub-enterprise.vercel.app/" class="live">
+                <a href="https://jaysub-enterprise.vercel.app/" class="live"  target="_blank">
                   <p>
                     <img src="./images/link.svg" />
                     <span>live demo</span>
@@ -222,6 +219,7 @@
                 <a
                   href="https://github.com/Petitesha/Jaysub_enterprise"
                   class="github-button"
+                  target="_blank"
                 >
                   <img src="./images/github-fill.svg" alt="github-logo" />
                 </a>
@@ -239,7 +237,11 @@
               </p>
               <p class="framework">Javascript -Html -Css</p>
               <div class="project-button">
-                <a href="https://sca-project1.vercel.app/" class="live">
+                <a
+                  href="https://sca-project1.vercel.app/"
+                  class="live"
+                  target="_blank"
+                >
                   <p>
                     <img src="./images/link.svg" />
                     <span>live demo</span>
@@ -248,6 +250,7 @@
                 <a
                   href="https://github.com/Petitesha/SCA-project1"
                   class="github-button"
+                  target="_blank"
                 >
                   <img src="./images/github-fill.svg" alt="github-logo" />
                 </a>
@@ -265,7 +268,7 @@
               </p>
               <p class="framework">Javascript -Html -Css</p>
               <div class="project-button">
-                <a href="https://planetfact.vercel.app/" class="live">
+                <a href="https://planetfact.vercel.app/" class="live"  target="_blank">
                   <p>
                     <img src="./images/link.svg" />
                     <span>live demo</span>
