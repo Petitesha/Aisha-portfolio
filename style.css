@@ -15,8 +15,8 @@ main.active {
     background-color: white;
 }
 
-.container {
-    width: 75%;
+.inner-container {
+    width: 85%;
     margin: 0 auto;
     /* min-height: 100vh; */
 }
@@ -89,7 +89,7 @@ nav {
 }
 
 .hero-text {
-    width: 75%
+    width: 85%
 }
 
 .hero-text p {
@@ -132,26 +132,25 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 70px 0px;
+    padding: 50px 0px;
 }
 
 .hero-links-tag {
     display: flex;
 }
-
-.ref {
+.hero-links-tag button{
     background-image: linear-gradient(89.81deg, #9845E8 -1.72%, #33D2FF 54.05%, #DD5789 99.78%);
     padding: 2px;
     text-decoration: none;
     width: 200px;
     border-radius: 5px;
-    margin-right: 30px;
+    margin-right: 30px; 
+    text-decoration: none;
+    border: none;
 }
-
-/* .ref.active p{
-    background-color: white;
-
-} */
+.ref {
+  text-decoration: none;
+}
 
 .ref p {
     display: flex;
@@ -202,9 +201,9 @@ nav {
 }
 
 .section2-div {
-    width: 75%;
+    width: 85%;
     margin: 0 auto;
-    padding: 70px 0px;
+    padding: 50px 0px;
 }
 
 .section2-div h3 {
@@ -292,16 +291,16 @@ nav {
 }
 
 .empty {
-    width: 75%;
+    width: 85%;
     margin: 0 auto;
     padding: 30px 0px;
     border-top: 0.6px solid #C6C6C6;
 }
 
 .section3 {
-    width: 75%;
+    width: 85%;
     margin: 0 auto;
-    padding-bottom: 70px;
+    padding-bottom: 30px;
 }
 
 .inner-section3 h3 {
@@ -321,7 +320,7 @@ nav {
 }
 
 .live-projects {
-    padding-bottom: 30px;
+    padding-bottom: 20px;
     /* width: 100%; */
 }
 
@@ -349,14 +348,14 @@ nav {
     font-size: 24px;
     font-weight: 300;
     font-family: 'Inter', sans-serif;
-    padding: 20px 0px;
+    padding: 10px 0px;
 }
 
 .project-details p {
     font-size: 14px;
     font-weight: 300;
     font-family: 'Inter', sans-serif;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
 }
 
 .bounce {
@@ -511,11 +510,15 @@ nav {
 .live p img {
     margin-right: 10px;
 }
-
+.empty2 {
+    width: 85%;
+    margin: 0 auto;
+    border-top: 0.6px solid #C6C6C6;
+}
 .education {
-    width: 75%;
+    width: 85%;
     margin: auto;
-    padding-bottom: 50px;
+    padding: 30px 0px;
 }
 
 .education.active p {
@@ -550,13 +553,13 @@ nav {
 
 @media screen and (max-width: 1200px) {
 
-    .container,
+    .inner-container,
     .hero-text,
     .section2-div,
     .empty,
     .section3,
     .education {
-        width: 85%;
+        width: 90%;
     }
 
     .hero-text {
@@ -652,7 +655,7 @@ nav {
 
     .ref {
         width: 30%;
-        margin-right: 20px;
+        /* margin-right: 20px; */
         align-items: center;
     }
 
@@ -715,8 +718,23 @@ nav {
 }
 
 @media screen and (max-width: 475px) {
+    .year{
+        display: block;
+    }
     .featured {
         grid-template-columns: repeat(1, 1fr);
+    }
+    .section2-div{
+        padding: 30px 0px;
+    }
+    .empty{
+        padding: 15px 0px;
+    }
+    .inner-education{
+        display: block;
+    }
+    .inner-education p:not(:first-child) {
+       padding: 5px 0px;
     }
 }
 
@@ -731,7 +749,7 @@ nav {
         align-items: center;
     }
 
-    .ref {
+    .hero-links-tag button {
         width: 40%;
         margin-right: 0px;
         margin-bottom: 20px;
