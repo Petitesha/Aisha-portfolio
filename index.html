@@ -9,302 +9,322 @@
   </head>
 
   <body>
-    <main>
-      <div class="inner-container">
-        <header>
-          <div class="small-pics">
-            <img src="./images/small-pics.jpg" alt="small-pics" />
+    <div class="container">
+      <main>
+        <div class="inner-container">
+          <header>
+            <div class="small-pics">
+              <img src="./images/small-pics.jpg" alt="small-pics" />
+            </div>
+            <nav class="nav">
+              <ul class="ul">
+                <li><a href="#projects" class="links">Projects</a></li>
+                <li><a href="#experience" class="links">Experience</a></li>
+                <li><a href="#contact" class="links">Contact</a></li>
+                <li><a href="#education" class="links">Education</a></li>
+              </ul>
+              <div class="mode">
+                <img
+                  class="modeIcon"
+                  src="./images/dark-mode.svg"
+                  alt="dark-mode"
+                  onclick="toggleMode(event)"
+                />
+              </div>
+            </nav>
+            <div class="hamburger">
+              <img src="./images/icon-menu.svg" alt="menu" />
+            </div>
+          </header>
+          <div class="sidebar">
+            <p class="close">x</p>
+            <nav class="side-nav">
+              <ul class="sidebar-ul">
+                <li><a href="#projects" class="links-sidebar">Projects</a></li>
+                <li>
+                  <a href="#experience" class="links-sidebar">Experience</a>
+                </li>
+                <li><a href="#contact" class="links-sidebar">Contact</a></li>
+                <li>
+                  <a href="#education" class="links-sidebar">Education</a>
+                </li>
+              </ul>
+              <div class="dark-mode">
+                <img
+                  class="modeIcon"
+                  src="./images/dark-mode.svg"
+                  alt="dark-mode"
+                  onclick="toggleMode(event)"
+                />
+              </div>
+            </nav>
           </div>
-          <nav class="nav">
-            <ul class="ul">
-              <li><a href="#projects" class="links">Projects</a></li>
-              <li><a href="#experience" class="links">Experience</a></li>
-              <li><a href="#contact" class="links">Contact</a></li>
-              <li><a href="#education" class="links">Education</a></li>
-            </ul>
-            <div class="mode">
-              <img
-                class="modeIcon"
-                src="./images/dark-mode.svg"
-                alt="dark-mode"
-                onclick="toggleMode(event)"
-              />
-            </div>
-          </nav>
-          <div class="hamburger">
-            <img src="./images/icon-menu.svg" alt="menu" />
-          </div>
-        </header>
-        <div class="sidebar">
-          <p class="close">x</p>
-          <nav class="side-nav">
-            <ul class="sidebar-ul">
-              <li><a href="#projects" class="links-sidebar">Projects</a></li>
-              <li>
-                <a href="#experience" class="links-sidebar">Experience</a>
-              </li>
-              <li><a href="#contact" class="links-sidebar">Contact</a></li>
-              <li><a href="#education" class="links-sidebar">Education</a></li>
-            </ul>
-            <div class="dark-mode">
-              <img
-                class="modeIcon"
-                src="./images/dark-mode.svg"
-                alt="dark-mode"
-                onclick="toggleMode(event)"
-              />
-            </div>
-          </nav>
-        </div>
-        <div class="hero-section">
-          <div class="inner-hero">
-            <div class="hero-text">
-              <p>Hey,I'm</p>
-              <h2>Bello Aisha Aderonke</h2>
-              <p>
-                I'm a software engineer based in Nigeria, Ogun State,Abeokuta. I
-                enjoy creating things that live on the internet, whether that be
-                websites, applications, or anything in between. I have been
-                coding for a year now and I've manage to gain a decent amount of
-                experience and valuable knowledge from all different kinds of
-                fields throughout my projects/work.
-              </p>
-            </div>
-            <div class="big-img">
-              <img src="./images/big-pics.jpg" />
-            </div>
-          </div>
-          <div class="hero-links" id="contact">
-            <div class="hero-links-tag">
-              <button>
-                <a href="mailto:belloaishaaderonke@gmail.com" class="ref">
-                  <p>
-                    <img src="./images/email-icon.svg" />
-                    <span>Send email</span>
-                  </p>
-                </a>
-              </button>
-              <button>
-                <a href="https://github.com/petitesha" class="ref">
-                  <p>
-                    <img src="./images/linkedin-icon.svg" />
-                    <span>LinkedIn</span>
-                  </p>
-                </a>
-              </button>
-              <button>
-                <a href="https://linkedin.com/in/belloaisha" class="ref">
-                  <p>
-                    <img src="./images/github-icon.svg" />
-                    <span>Github</span>
-                  </p>
-                </a>
-              </button>
-            </div>
-            <div class="arrow bounce">
-              <img src="./images/arrow-down.svg" />
-            </div>
-          </div>
-        </div>
-      </div>
-    </main>
-    <section class="section2">
-      <div class="section2-div">
-        <h3 id="experience">EXPERIENCE</h3>
-        <div class="company">
-          <div class="jobs">
-            <h4 onclick="changeExperience(event,1)" class="curr">
-              Shecode Africa
-            </h4>
-            <h4 onclick="changeExperience(event, 2)">Easyrent Inc</h4>
-            <h4 onclick="changeExperience(event, 3)">Grazac Academy</h4>
-          </div>
-          <div class="desc"></div>
-        </div>
-      </div>
-      <div class="empty"></div>
-      <div class="section3">
-        <div class="inner-section3">
-          <h3 id="projects">FEATURED PROJECTS</h3>
-        </div>
-        <div class="featured">
-          <div class="live-projects">
-            <div class="project-img">
-              <img src="./images/EASYRENT.png" alt="easyrent-img" />
-            </div>
-            <div class="project-details">
-              <h3>EASYRENT INC</h3>
-              <p class="actions">
-                Website for renting an apartment to scrap agents fee
-              </p>
-              <p class="framework">React</p>
-              <div class="project-button">
-                <a
-                  href="https://easy-rent-product-frontend.vercel.app/"
-                  class="live"
-                  target="_blank"
-                >
-                  <p>
-                    <img src="./images/link.svg" />
-                    <span>Live demo</span>
-                  </p>
-                </a>
+          <div class="hero-section">
+            <div class="inner-hero">
+              <div class="hero-text">
+                <p>Hey,I'm</p>
+                <h2>Bello Aisha Aderonke</h2>
+                <p>
+                  I'm a software engineer based in Nigeria, Ogun State,Abeokuta.
+                  I enjoy creating things that live on the internet, whether
+                  that be websites, applications, or anything in between. I have
+                  been coding for a year now and I've manage to gain a decent
+                  amount of experience and valuable knowledge from all different
+                  kinds of fields throughout my projects/work.
+                </p>
+              </div>
+              <div class="big-img">
+                <img src="./images/big-pics.jpg" />
               </div>
             </div>
-          </div>
-          <div class="live-projects">
-            <div class="project-img">
-              <img src="./images/ECOMMERCE.png" alt="ecommerce" />
-            </div>
-            <div class="project-details">
-              <h3>ECOMMERCE</h3>
-              <p class="actions">This helps users to build their website</p>
-              <p class="framework">Javascript -Html -Css</p>
-              <div class="project-button">
-                <a href="https://ecommerce-pi-gilt.vercel.app/" class="live"  target="_blank">
-                  <p>
-                    <img src="./images/link.svg" />
-                    <span>Live demo</span>
-                  </p>
-                </a>
-                <a
-                  href="https://github.com/Petitesha/ecommerce"
-                  class="github-button"
-                  target="_blank"
-                >
-                  <img src="./images/github-fill.svg" alt="github-logo" />
-                </a>
+            <div class="hero-links" id="contact">
+              <div class="hero-links-tag">
+                <button>
+                  <a href="mailto:belloaishaaderonke@gmail.com" class="ref">
+                    <p>
+                      <img src="./images/email-icon.svg" />
+                      <span>Send email</span>
+                    </p>
+                  </a>
+                </button>
+                <button>
+                  <a href="https://github.com/petitesha" class="ref">
+                    <p>
+                      <img src="./images/linkedin-icon.svg" />
+                      <span>LinkedIn</span>
+                    </p>
+                  </a>
+                </button>
+                <button>
+                  <a href="https://linkedin.com/in/belloaisha" class="ref">
+                    <p>
+                      <img src="./images/github-icon.svg" />
+                      <span>Github</span>
+                    </p>
+                  </a>
+                </button>
               </div>
-            </div>
-          </div>
-          <div class="live-projects">
-            <div class="project-img">
-              <img src="./images/MUSIC.png" alt="music" />
-            </div>
-            <div class="project-details">
-              <h3>MOCKING BY JAY</h3>
-              <p class="actions">
-                Provides access to booking a music session with an artiste of
-                choice
-              </p>
-              <p class="framework">Javascript -Html -Css</p>
-              <div class="project-button">
-                <a href="https://my-grazac-projects.vercel.app/" class="live"  target="_blank">
-                  <p>
-                    <img src="./images/link.svg" />
-                    <span>Live demo</span>
-                  </p>
-                </a>
-                <a
-                  href="https://github.com/Petitesha/MyGrazacProjects"
-                  class="github-button" target="_blank"
-
-                >
-                  <img src="./images/github-fill.svg" alt="github-logo" />
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="live-projects">
-            <div class="project-img">
-              <img src="./images/JAYSUB.png" alt="jaysub" />
-            </div>
-            <div class="project-details">
-              <h3>JAYSUB ENTERPRISE</h3>
-              <p class="actions">
-                Responsible for purchasing airtime, data and some online bills
-              </p>
-              <p class="framework">React</p>
-              <div class="project-button">
-                <a href="https://jaysub-enterprise.vercel.app/" class="live"  target="_blank">
-                  <p>
-                    <img src="./images/link.svg" />
-                    <span>Live demo</span>
-                  </p>
-                </a>
-                <a
-                  href="https://github.com/Petitesha/Jaysub_enterprise"
-                  class="github-button"
-                  target="_blank"
-                >
-                  <img src="./images/github-fill.svg" alt="github-logo" />
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="live-projects">
-            <div class="project-img">
-              <img src="./images/SNEAKERS.png" alt="sneakers" />
-            </div>
-            <div class="project-details">
-              <h3>SNEAKERS CART</h3>
-              <p class="actions">
-                User can add to cart,increase and decrease amount of products
-              </p>
-              <p class="framework">Javascript -Html -Css</p>
-              <div class="project-button">
-                <a
-                  href="https://sca-project1.vercel.app/"
-                  class="live"
-                  target="_blank"
-                >
-                  <p>
-                    <img src="./images/link.svg" />
-                    <span>Live demo</span>
-                  </p>
-                </a>
-                <a
-                  href="https://github.com/Petitesha/SCA-project1"
-                  class="github-button"
-                  target="_blank"
-                >
-                  <img src="./images/github-fill.svg" alt="github-logo" />
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="live-projects">
-            <div class="project-img">
-              <img src="./images/PLANETFACT.png" alt="planetfact-img" />
-            </div>
-            <div class="project-details">
-              <h3>PLANET FACTS</h3>
-              <p class="actions">
-                Shows an overview of the earth and geological facts about it
-              </p>
-              <p class="framework">Javascript -Html -Css</p>
-              <div class="project-button">
-                <a href="https://planetfact.vercel.app/" class="live"  target="_blank">
-                  <p>
-                    <img src="./images/link.svg" />
-                    <span>Live demo</span>
-                  </p>
-                </a>
-                <a
-                  href="https://github.com/Petitesha/planetfact"
-                  class="github-button"
-                >
-                  <img src="./images/github-fill.svg" alt="github-logo" />
-                </a>
+              <div class="arrow bounce">
+                <img src="./images/arrow-down.svg" />
               </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="empty2"></div>
-      <div class="education">
-        <h3 id="education">EDUCATION</h3>
-        <div class="inner-education">
-          <div>
-            <p class="school">Lagos State University (LASU), Nigeria</p>
-            <p class="bachelor">
-              Bachelor of Science,Biochemistry (Second Class,Upper Division)
-            </p>
+      </main>
+      <section class="section2">
+        <div class="section2-div">
+          <h3 id="experience">EXPERIENCE</h3>
+          <div class="company">
+            <div class="jobs">
+              <h4 onclick="changeExperience(event,1)" class="curr">
+                Shecode Africa
+              </h4>
+              <h4 onclick="changeExperience(event, 2)">Easyrent Inc</h4>
+              <h4 onclick="changeExperience(event, 3)">Grazac Academy</h4>
+            </div>
+            <div class="desc"></div>
           </div>
-          <p>2016 - 2021</p>
         </div>
-      </div>
-    </section>
+        <div class="empty"></div>
+        <div class="section3">
+          <div class="inner-section3">
+            <h3 id="projects">FEATURED PROJECTS</h3>
+          </div>
+          <div class="featured">
+            <div class="live-projects">
+              <div class="project-img">
+                <img src="./images/EASYRENT.png" alt="easyrent-img" />
+              </div>
+              <div class="project-details">
+                <h3>EASYRENT INC</h3>
+                <p class="actions">
+                  Website for renting an apartment to scrap agents fee
+                </p>
+                <p class="framework">React</p>
+                <div class="project-button">
+                  <a
+                    href="https://easy-rent-product-frontend.vercel.app/"
+                    class="live"
+                    target="_blank"
+                  >
+                    <p>
+                      <img src="./images/link.svg" />
+                      <span>Live demo</span>
+                    </p>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="live-projects">
+              <div class="project-img">
+                <img src="./images/ECOMMERCE.png" alt="ecommerce" />
+              </div>
+              <div class="project-details">
+                <h3>ECOMMERCE</h3>
+                <p class="actions">This helps users to build their website</p>
+                <p class="framework">Javascript -Html -Css</p>
+                <div class="project-button">
+                  <a
+                    href="https://ecommerce-pi-gilt.vercel.app/"
+                    class="live"
+                    target="_blank"
+                  >
+                    <p>
+                      <img src="./images/link.svg" />
+                      <span>Live demo</span>
+                    </p>
+                  </a>
+                  <a
+                    href="https://github.com/Petitesha/ecommerce"
+                    class="github-button"
+                    target="_blank"
+                  >
+                    <img src="./images/github-fill.svg" alt="github-logo" />
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="live-projects">
+              <div class="project-img">
+                <img src="./images/MUSIC.png" alt="music" />
+              </div>
+              <div class="project-details">
+                <h3>MOCKING BY JAY</h3>
+                <p class="actions">
+                  Provides access to booking a music session with an artiste of
+                  choice
+                </p>
+                <p class="framework">Javascript -Html -Css</p>
+                <div class="project-button">
+                  <a
+                    href="https://my-grazac-projects.vercel.app/"
+                    class="live"
+                    target="_blank"
+                  >
+                    <p>
+                      <img src="./images/link.svg" />
+                      <span>Live demo</span>
+                    </p>
+                  </a>
+                  <a
+                    href="https://github.com/Petitesha/MyGrazacProjects"
+                    class="github-button"
+                    target="_blank"
+                  >
+                    <img src="./images/github-fill.svg" alt="github-logo" />
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="live-projects">
+              <div class="project-img">
+                <img src="./images/JAYSUB.png" alt="jaysub" />
+              </div>
+              <div class="project-details">
+                <h3>JAYSUB ENTERPRISE</h3>
+                <p class="actions">
+                  Responsible for purchasing airtime, data and some online bills
+                </p>
+                <p class="framework">React</p>
+                <div class="project-button">
+                  <a
+                    href="https://jaysub-enterprise.vercel.app/"
+                    class="live"
+                    target="_blank"
+                  >
+                    <p>
+                      <img src="./images/link.svg" />
+                      <span>Live demo</span>
+                    </p>
+                  </a>
+                  <a
+                    href="https://github.com/Petitesha/Jaysub_enterprise"
+                    class="github-button"
+                    target="_blank"
+                  >
+                    <img src="./images/github-fill.svg" alt="github-logo" />
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="live-projects">
+              <div class="project-img">
+                <img src="./images/SNEAKERS.png" alt="sneakers" />
+              </div>
+              <div class="project-details">
+                <h3>SNEAKERS CART</h3>
+                <p class="actions">
+                  User can add to cart,increase and decrease amount of products
+                </p>
+                <p class="framework">Javascript -Html -Css</p>
+                <div class="project-button">
+                  <a
+                    href="https://sca-project1.vercel.app/"
+                    class="live"
+                    target="_blank"
+                  >
+                    <p>
+                      <img src="./images/link.svg" />
+                      <span>Live demo</span>
+                    </p>
+                  </a>
+                  <a
+                    href="https://github.com/Petitesha/SCA-project1"
+                    class="github-button"
+                    target="_blank"
+                  >
+                    <img src="./images/github-fill.svg" alt="github-logo" />
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="live-projects">
+              <div class="project-img">
+                <img src="./images/PLANETFACT.png" alt="planetfact-img" />
+              </div>
+              <div class="project-details">
+                <h3>PLANET FACTS</h3>
+                <p class="actions">
+                  Shows an overview of the earth and geological facts about it
+                </p>
+                <p class="framework">Javascript -Html -Css</p>
+                <div class="project-button">
+                  <a
+                    href="https://planetfact.vercel.app/"
+                    class="live"
+                    target="_blank"
+                  >
+                    <p>
+                      <img src="./images/link.svg" />
+                      <span>Live demo</span>
+                    </p>
+                  </a>
+                  <a
+                    href="https://github.com/Petitesha/planetfact"
+                    class="github-button"
+                  >
+                    <img src="./images/github-fill.svg" alt="github-logo" />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="empty2"></div>
+        <div class="education">
+          <h3 id="education">EDUCATION</h3>
+          <div class="inner-education">
+            <div>
+              <p class="school">Lagos State University (LASU), Nigeria</p>
+              <p class="bachelor">
+                Bachelor of Science,Biochemistry (Second Class,Upper Division)
+              </p>
+            </div>
+            <p>2016 - 2021</p>
+          </div>
+        </div>
+      </section>
+    </div>
   </body>
   <script src="./script.js"></script>
 </html>
