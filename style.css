@@ -120,7 +120,9 @@ nav {
     background-clip: text;
 
 }
-
+.bio{
+    margin-right: 30px;
+}
 .big-img {
     width: 250px;
     height: 300px;
@@ -577,7 +579,9 @@ nav {
     .hero-text p {
         font-size: 14px;
     }
-
+    .bio{
+        margin-right: 0px;
+    }
     .big-img {
         width: 200px;
         height: 250px;
